@@ -16,6 +16,7 @@
     --citrus: #F7C331;
     --apple-core: #DCC7AA;
     --light-blue-grey: #F0FFFF;
+    --gold: rgba(255, 255, 0, 0.5 );
 
 
 }
@@ -33,7 +34,7 @@ body { /* zerando as config da pagina*/
     }
 }
 .navbar {
-    background-color: var(--light-blue-grey); 
+    background-color: var(--gold);
     padding: 0.5rem 1rem;
 }
 
