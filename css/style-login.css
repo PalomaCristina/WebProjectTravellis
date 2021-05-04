@@ -1,0 +1,231 @@
+:root { /*create variable inside css*/
+    
+    --input-background: linear-gradient(120deg, #EEE9E9, #F5F5F5);
+    --input-error: red;
+    --button-linear:linear-gradient(125deg, #F7882F, #F7C331, #F7882F );
+    --input-line: linear-gradient(120deg, #687A8F, #F7882F);
+    --button-disabled: #acacac;
+    --button-success: rgb(18, 151, 107);
+    --white: #ffffff;
+    --black: #303030;
+    --grey: #708090;
+    --top-blue: #104E8B;
+    --light-grey: #cfcfcf;
+    --blueberry: #687A8F;
+    --apricot: #F7882F;
+    --citrus: #F7C331;
+    --apple-core: #DCC7AA;
+    --light-blue-grey: #F0FFFF;
+
+
+}
+
+
+body { /* zerando as config da pagina*/
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@media (max-width: 991.98px){
+    .navbar-brand > .container {
+    padding-right: 0;
+    padding-left: 0;
+    }
+}
+.navbar {
+    background-color: var(--light-blue-grey); 
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: inherit;
+    white-space: nowrap;
+    font-family: "Lato", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.navbar-brand:hover, .navbar-brand:focus {
+    color: rgba(0, 0, 0, 0.9);
+  }
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login {
+    height: 100vh;
+    background: var(--input-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    min-height: 450px;
+    width: 390px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 1em #6E7B8B;
+}
+.login_title {
+     margin-bottom: 32px;
+     color: var(--black);
+
+ }
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login_input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+}
+
+.login_input_border {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: var(--light-grey);
+    transition: .3s ease-in-out;
+}
+
+.login_input_border::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: var(--input-line);
+    transition: .3s ease-in-out;
+}
+
+.login_input:focus + .login_input_border::after {
+    width: 100%;
+
+}
+
+.login_input-border.error {
+    background: var(--input-error) ;
+}
+
+.login_input-border.error::after {
+    background: var(--input-error) ;
+}
+
+.login_submit {
+    height: 52px;
+    width: 100%;
+    outline: none;
+    background: var(--button-linear);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.login_submit:disabled {
+    background: var(--button-disabled);
+    cursor: not-allowed;   
+}
+
+.login_submit:hover {
+    background-position: right;
+}
+
+.login_submit.error {
+    background: var(--input-error);
+}
+
+.login_submit.success {
+    background: var(--button-success);
+}
+
+.login_reset {
+    font-size: 14px, bold;
+    color:black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.login_reset:hover {
+    color: var(--top-blue);
+}
+.checkbox-wrap {
+    font-size: 14px, bold;
+    color: black;
+    padding-bottom: 20px;    
+}
+.checkbox-wrap:hover {
+    color: var(--top-blue);
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--top-blue);   
+    width: 115px;
+    height: 40px;
+    
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  .btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  .btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
