@@ -84,10 +84,22 @@ body {
 }
 .initial_text {
   font-size: 20px;
-  color: var(--white);
+  color: var(--light);
   opacity: 1.0;
 
 }
+.subtitle-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 28%;  
+  font-size: 32px;
+  font-style:inherit;
+  color: var(--light);
+  opacity: 1.0;
+} 
+
 hr {
   box-sizing: content-box;
   height: 0;
