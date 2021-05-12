@@ -82,7 +82,12 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
+.initial_text {
+  font-size: 20px;
+  color: var(--white);
+  opacity: 1.0;
 
+}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -6181,7 +6186,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: rgba(255, 255, 0, 0.5 );
+  background-color: var(--light-blue-grey);
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -10041,8 +10046,7 @@ h3 {
 
 header.masthead {
   position: relative;
-  background: url("../assets/img/travel1.jpg"); /*imagem de inicio*/;
-  opacity: 0.7;
+  background: url("../assets/img/travel1.jpeg"); /*imagem de inicio*/;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;

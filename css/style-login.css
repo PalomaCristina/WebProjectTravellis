@@ -15,7 +15,7 @@
     --apricot: #F7882F;
     --citrus: #F7C331;
     --apple-core: #DCC7AA;
-    --light-blue-grey: #F0FFFF;
+    --light-blue-grey: #d9ffff;
     --gold: rgba(255, 255, 0, 0.5 );
 
 
@@ -34,7 +34,7 @@ body { /* zerando as config da pagina*/
     }
 }
 .navbar {
-    background-color: var(--gold);
+    background-color: var(--light-blue-grey);
     padding: 0.5rem 1rem;
 }
 
@@ -110,9 +110,10 @@ body { /* zerando as config da pagina*/
 .login_input_border {
     height: 1px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     background-color: var(--light-grey);
     transition: .3s ease-in-out;
+    
 }
 
 .login_input_border::after {
@@ -144,7 +145,7 @@ body { /* zerando as config da pagina*/
     outline: none;
     background: var(--button-linear);
     background-size: 200%;
-    margin-bottom: 32px;
+    margin-bottom: 19px;
     color: var(--white);
     font-size: 18px;
     font-weight: bold;
@@ -176,17 +177,20 @@ body { /* zerando as config da pagina*/
     color:black;
     text-decoration: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 55%;
+    margin-bottom: 25px;
 }
 .login_reset:hover {
     color: var(--top-blue);
+    text-decoration: none;
 }
 .checkbox-wrap {
     font-size: 14px, bold;
     color: black;
-    padding-bottom: 20px;    
+    padding-bottom: 11px;
+    margin-right: 200px;    
 }
 .checkbox-wrap:hover {
     color: var(--top-blue);
@@ -229,4 +233,16 @@ body { /* zerando as config da pagina*/
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+  }
+  .login_register {
+    font-size: 14px, bold;
+    color:black;
+    text-decoration: none;
+    margin-top: 5px;
+    align-items: center;
+  }
+
+  .login_register:hover {
+      text-decoration: none;
+      color: var(--top-blue);
   }
