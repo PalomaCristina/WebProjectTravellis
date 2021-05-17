@@ -246,3 +246,16 @@ body { /* zerando as config da pagina*/
       text-decoration: none;
       color: var(--top-blue);
   }
+
+  .about_password {
+      padding-right: 50%;
+      color: var(--grey);
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-size: 13px;
+  }
+  .about_password:hover {
+    text-decoration: none;
+    color: var(--grey);
+    
+}
