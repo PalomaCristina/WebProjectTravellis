@@ -28,7 +28,7 @@
         <div class="login_container">
             <h1 class="login_title">Entre</h1>
             <form class="login_form">
-                <input class="login_input" type="email" placeholder="E-mail">
+                <input class="login_input" type="text" placeholder="E-mail">
                 	<span class="login_input_border"></span>
                 		<input class="login_input" type="password" placeholder="Senha">
                 			<span class="login_input_border"></span>
