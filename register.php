@@ -28,18 +28,18 @@
         <div class="login_container">
             <h1 class="login_title">Crie sua conta</h1>
             <form action="querecebe.php" class="login_form" method="POST">
-                <input class="login_input" type="name" placeholder="Nome completo">
+                <input class="login_input" name="nome" type="text" placeholder="Nome completo">
                 <span class="login_input_border"></span>
-                <input class="login_input" type="email" placeholder="E-mail">
+                <input class="login_input" name="email" type="email" placeholder="E-mail">
                 <span class="login_input_border"></span>
-                <input class="login_input" type="password" placeholder="Senha">
+                <input class="login_input" name="senha" type="password" placeholder="Senha">
                 <span class="login_input_border"></span>
                 <a class="about_password">Use entre 8 e 6 caracteres</a>
                 <button class="login_submit">Cadastrar</button>
                 <div class="login-reset-background">
                   </label>
                 </div>
-                <a href="./login.html" class="login_register">Já tem uma conta?<strong> Entrar</strong></a>
+                <a href="./login.php" class="login_register">Já tem uma conta?<strong> Entrar</strong></a>
                 <div class="login-reset-background">
                     
                 </div>
