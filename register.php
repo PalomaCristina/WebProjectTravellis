@@ -21,7 +21,7 @@
         <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#!"><i class="fas fa-globe-americas"></i> Travellis</a>
-                <a type="button" class="btn btn-primary" href="./login.html"> Voltar</a>
+                <a type="button" class="btn btn-primary" href="./login.php"> Voltar</a>
             </div>
         </nav>
     <main class="login">
