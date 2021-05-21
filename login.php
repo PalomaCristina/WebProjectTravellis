@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style-login.css">
-    <title>Cadastre-se</title>
-    <script defer src="./js/script-login.js"></script>
+    <title>Login</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Font Awesome icons (free version)-->
@@ -19,33 +18,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
-        <nav class="navbar">
+            <nav class="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#!"><i class="fas fa-globe-americas"></i> Travellis</a>
-                <a type="button" class="btn btn-primary" href="./login.html"> Voltar</a>
+                <a type="button" class="btn btn-primary" href="./index.php"> Voltar</a>
             </div>
         </nav>
     <main class="login">
         <div class="login_container">
-            <h1 class="login_title">Crie sua conta</h1>
+            <h1 class="login_title">Entre</h1>
             <form class="login_form">
-                <input class="login_input" type="name" placeholder="Nome completo">
-                <span class="login_input_border"></span>
                 <input class="login_input" type="email" placeholder="E-mail">
-                <span class="login_input_border"></span>
-                <input class="login_input" type="password" placeholder="Senha">
-                <span class="login_input_border"></span>
-                <a class="about_password">Use entre 8 e 6 caracteres</a>
-                <button class="login_submit">Cadastrar</button>
+                	<span class="login_input_border"></span>
+                		<input class="login_input" type="password" placeholder="Senha">
+                			<span class="login_input_border"></span>
+                <a class="login_reset" href="#">Esqueceu a senha?</a>
+                <button class="login_submit">Login</button>
                 <div class="login-reset-background">
+                    <label class="checkbox-wrap">Salvar senha
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
                   </label>
                 </div>
-                <a href="./login.html" class="login_register">Já tem uma conta?<strong> Entrar</strong></a>
-                <div class="login-reset-background">
-                    
-                </div>
-            </div>
+                <a href="./register.php" class="login_register">É novo por aqui? <strong>Cadastre-se</strong></a>
+                	<div class="login-reset-background">
+                    </div>
+            	</div>
             </form>
     </main>
 

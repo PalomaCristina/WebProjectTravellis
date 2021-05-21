@@ -22,7 +22,7 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="#!"><i class="fas fa-globe-americas"></i> Travellis</a>
-                <a class="btn btn-primary" href="./login.html">Entrar</a>
+                <a class="btn btn-primary" href="./login.php">Entrar</a>
             </div>
         </nav>
         <!-- Masthead-->
