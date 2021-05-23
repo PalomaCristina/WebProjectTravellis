@@ -27,17 +27,17 @@
     <main class="login">
         <div class="login_container">
             <h1 class="login_title">Entre</h1>
-            <form class="login_form">
-                <input class="login_input" type="text" placeholder="E-mail">
+            <form action="consultar_usuario.php" class="login_form" method="POST">
+                <input class="login_input" name="email" type="email" placeholder="E-mail">
                 	<span class="login_input_border"></span>
-                		<input class="login_input" type="password" placeholder="Senha">
-                			<span class="login_input_border"></span>
-                <a class="login_reset" href="#">Esqueceu a senha?</a>
-                <button class="login_submit">Login</button>
-                <div class="login-reset-background">
-                    <label class="checkbox-wrap">Salvar senha
-                    <input type="checkbox" checked>
-                    <span class="checkmark"></span>
+                		<input class="login_input" name="senha" type="password" id="senha" placeholder="Senha">
+                			<span class="login_input_border" ></span>
+                                <a class="login_reset" href="#">Esqueceu a senha?</a>
+                                <button class="login_submit">Login</button>
+                                    <div class="login-reset-background">
+                                <label class="checkbox-wrap">Salvar senha
+                            <input type="checkbox" checked>
+                        <span class="checkmark"></span>
                   </label>
                 </div>
                 <a href="./register.php" class="login_register">É novo por aqui? <strong>Cadastre-se</strong></a>

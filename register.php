@@ -34,7 +34,7 @@
                 <span class="login_input_border"></span>
                 <input class="login_input" name="senha" type="password" placeholder="Senha">
                 <span class="login_input_border"></span>
-                <a class="about_password">Use entre 8 e 6 caracteres</a>
+                <a class="about_password">Use entre 6 e 8 caracteres</a>
                 <button class="login_submit">Cadastrar</button>
                 <div class="login-reset-background">
                   </label>
